@@ -130,22 +130,22 @@ function Index() {
           />
         </div>
 
-        <div className="relative z-10 max-w-[1200px] mx-auto px-[5%] py-20 w-full">
+        <div className="relative z-10 max-w-[1200px] mx-auto px-[5%] py-20 w-full text-center md:text-left">
           <div className="inline-flex items-center gap-3 text-[0.75rem] font-bold tracking-[0.25em] uppercase text-gold mb-6">
             <span className="w-8 h-px bg-gold" />
             Premier Painting Service
           </div>
-          <h1 className="display font-bold leading-[1.0] text-white mb-6 max-w-[700px] text-[clamp(3.5rem,7vw,6.5rem)]">
+          <h1 className="display font-bold leading-[1.0] text-white mb-6 max-w-[700px] mx-auto md:mx-0 text-[clamp(3.5rem,7vw,6.5rem)]">
             Your Home<br />Deserves<br />
             <em className="not-italic text-gold relative">
               Luxury
               <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-gold to-transparent" />
             </em>
           </h1>
-          <p className="text-white/70 text-lg leading-relaxed max-w-[520px] mb-10">
+          <p className="text-white/70 text-lg leading-relaxed max-w-[520px] mx-auto md:mx-0 mb-10">
             Premium interior & exterior painting across Houston. Free estimates, no hidden fees. Trusted by 50+ homeowners.
           </p>
-          <div className="flex flex-wrap items-center gap-4 mb-12">
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-12">
             <a href="#contact" className="btn-gold px-8 py-4 text-base inline-flex items-center gap-2">
               Get Free Estimate <ArrowRight className="w-4 h-4" />
             </a>
@@ -159,7 +159,7 @@ function Index() {
               </span>
             </a>
           </div>
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap justify-center md:justify-start gap-6">
             {["5.0 Google Rating", "Free Estimates", "Premium Materials", "No Hidden Fees"].map((b) => (
               <div key={b} className="flex items-center gap-2 text-sm font-semibold text-white/65 tracking-wide">
                 <span className="w-2 h-2 rounded-full bg-gold" />
