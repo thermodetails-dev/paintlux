@@ -143,7 +143,7 @@ function Index() {
         <div className="relative z-10 max-w-[1200px] mx-auto px-[5%] py-20 w-full">
           <div className="inline-flex items-center gap-3 text-[0.75rem] font-bold tracking-[0.25em] uppercase text-gold mb-6">
             <span className="w-8 h-px bg-gold" />
-            Houston's Premier Painting Service
+            Premier Painting Service
           </div>
           <h1 className="display font-bold leading-[1.0] text-white mb-6 max-w-[700px] text-[clamp(3.5rem,7vw,6.5rem)]">
             Your Home<br />Deserves<br />
