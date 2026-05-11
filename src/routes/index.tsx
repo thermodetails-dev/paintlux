@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroPaint from "@/assets/hero-paint.png";
+import logoImg from "@/assets/logo.png";
 import {
   Phone, Mail, MapPin, Clock, Check, ArrowRight, Shield, FileText,
   Palette, Star, Home, Building2, Hammer, Square, Brush, DoorOpen,
@@ -64,19 +65,8 @@ const AREAS = ["Houston", "Katy", "The Woodlands", "Sugar Land", "Pearland", "Cy
 
 function Logo() {
   return (
-    <a href="#hero" className="flex items-center gap-2.5 no-underline">
-      <div className="w-11 h-11 rounded-full bg-gradient-to-br from-gold to-gold-dk flex items-center justify-center">
-        <Brush className="w-5 h-5 text-green-dk" strokeWidth={2.5} />
-      </div>
-      <div className="leading-none">
-        <div className="condensed text-[1.5rem] font-extrabold tracking-wider">
-          <span className="text-white">PAINT</span>
-          <span className="text-gold">LUX</span>
-        </div>
-        <div className="text-[0.55rem] font-semibold tracking-[0.18em] text-gold uppercase mt-1">
-          Your Home Deserves Luxury
-        </div>
-      </div>
+    <a href="#hero" className="flex items-center no-underline">
+      <img src={logoImg} alt="PaintLux – Your Home Deserves Luxury" className="h-12 w-auto object-contain" />
     </a>
   );
 }
