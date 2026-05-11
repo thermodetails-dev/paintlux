@@ -120,7 +120,7 @@ function Index() {
       <section id="hero" className="relative min-h-screen flex items-center pt-[72px] overflow-hidden bg-green-dk">
         <div className="absolute inset-0 [background:radial-gradient(ellipse_70%_70%_at_70%_50%,oklch(0.74_0.13_85/0.08)_0%,transparent_70%),radial-gradient(ellipse_50%_80%_at_20%_80%,oklch(0.32_0.05_150/0.9)_0%,transparent_60%),linear-gradient(135deg,oklch(0.22_0.04_150)_0%,oklch(0.32_0.05_150)_50%,oklch(0.22_0.04_150)_100%)]" />
         <div className="absolute -right-[5%] inset-y-0 w-[55%] -skew-x-6 border-l border-gold/15 bg-gradient-to-br from-transparent via-gold/5 to-gold/[0.02]" />
-        <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[55%] max-w-[780px] pointer-events-none">
+        <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[55%] max-w-[780px] pointer-events-none">
           <img
             src={heroPaint}
             alt="PaintLux premium paint cans with brushes"
