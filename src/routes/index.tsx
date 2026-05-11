@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import heroPaint from "@/assets/hero-paint.png";
 import {
   Phone, Mail, MapPin, Clock, Check, ArrowRight, Shield, FileText,
   Palette, Star, Home, Building2, Hammer, Square, Brush, DoorOpen,
@@ -129,10 +130,17 @@ function Index() {
       <section id="hero" className="relative min-h-screen flex items-center pt-[72px] overflow-hidden bg-green-dk">
         <div className="absolute inset-0 [background:radial-gradient(ellipse_70%_70%_at_70%_50%,oklch(0.74_0.13_85/0.08)_0%,transparent_70%),radial-gradient(ellipse_50%_80%_at_20%_80%,oklch(0.32_0.05_150/0.9)_0%,transparent_60%),linear-gradient(135deg,oklch(0.22_0.04_150)_0%,oklch(0.32_0.05_150)_50%,oklch(0.22_0.04_150)_100%)]" />
         <div className="absolute -right-[5%] inset-y-0 w-[55%] -skew-x-6 border-l border-gold/15 bg-gradient-to-br from-transparent via-gold/5 to-gold/[0.02]" />
-        <div className="hidden md:flex absolute right-[8%] top-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full border border-gold/15 items-center justify-center">
+        <div className="hidden md:flex absolute right-[6%] top-1/2 -translate-y-1/2 w-[480px] h-[480px] items-center justify-center">
+          <div className="absolute w-[420px] h-[420px] rounded-full border border-gold/15" />
           <div className="absolute w-[340px] h-[340px] rounded-full border border-gold/10" />
-          <div className="absolute w-[260px] h-[260px] rounded-full bg-gradient-radial from-gold/10 to-transparent" style={{ background: "radial-gradient(circle, oklch(0.74 0.13 85 / 0.12) 0%, transparent 70%)" }} />
-          <Brush className="w-32 h-32 text-gold/30" strokeWidth={1} />
+          <div className="absolute w-[260px] h-[260px] rounded-full" style={{ background: "radial-gradient(circle, oklch(0.74 0.13 85 / 0.18) 0%, transparent 70%)" }} />
+          <img
+            src={heroPaint}
+            alt="Premium gold paint can with brush"
+            width={1024}
+            height={1024}
+            className="relative w-[420px] h-[420px] object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.5)]"
+          />
         </div>
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-[5%] py-20 w-full">
