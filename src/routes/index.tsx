@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "PaintLux – Your Home Deserves Luxury | Houston Painting" },
-      { name: "description", content: "Premium interior & exterior painting in Houston, TX. Free estimates, licensed & insured. Serving Katy, The Woodlands, Sugar Land." },
+      { name: "description", content: "Premium interior & exterior painting in Houston, TX. Free estimates. Serving Katy, The Woodlands, Sugar Land." },
     ],
   }),
   component: Index,
@@ -34,12 +34,12 @@ const SERVICES = [
 
 const STEPS = [
   { Icon: ClipboardList, title: "Request Free Estimate", desc: "Fill out our quick form or call us. We'll reach out within 24 hours — zero pressure, zero obligation." },
-  { Icon: Search, title: "Painter Visits Your Home", desc: "A licensed professional visits, assesses the scope, and provides a detailed written estimate with timeline." },
+  { Icon: Search, title: "Painter Visits Your Home", desc: "A professional visits, assesses the scope, and provides a detailed written estimate with timeline." },
   { Icon: CheckCircle2, title: "Job Complete — You Pay", desc: "We complete the work to perfection. Only when you're 100% satisfied do you pay." },
 ];
 
 const WHY = [
-  { Icon: Shield, title: "Licensed & Insured", desc: "Fully licensed in Texas and carrying comprehensive liability insurance — your home is always protected." },
+  { Icon: Shield, title: "Houston's Trusted Pros", desc: "Locally rooted in Texas with a reputation built on quality craftsmanship — your home is in safe, expert hands." },
   { Icon: FileText, title: "Free Estimates", desc: "We visit your home, assess the job, and give you a detailed written quote — completely free, no pressure." },
   { Icon: Palette, title: "Premium Materials", desc: "We use only top-tier paints from Sherwin-Williams and Benjamin Moore — your walls deserve the best." },
   { Icon: Star, title: "100% Satisfaction", desc: "We don't consider a job done until you're completely satisfied. If it's not right, we'll make it right." },
@@ -148,7 +148,7 @@ function Index() {
             </em>
           </h1>
           <p className="text-white/70 text-lg leading-relaxed max-w-[520px] mb-10">
-            Premium interior & exterior painting across Houston. Free estimates, no hidden fees. Licensed, insured, and trusted by 50+ homeowners.
+            Premium interior & exterior painting across Houston. Free estimates, no hidden fees. Trusted by 50+ homeowners.
           </p>
           <div className="flex flex-wrap items-center gap-4 mb-12">
             <a href="#contact" className="btn-gold px-8 py-4 text-base inline-flex items-center gap-2">
@@ -165,7 +165,7 @@ function Index() {
             </a>
           </div>
           <div className="flex flex-wrap gap-6">
-            {["5.0 Google Rating", "Free Estimates", "Licensed & Insured", "No Hidden Fees"].map((b) => (
+            {["5.0 Google Rating", "Free Estimates", "Premium Materials", "No Hidden Fees"].map((b) => (
               <div key={b} className="flex items-center gap-2 text-sm font-semibold text-white/65 tracking-wide">
                 <span className="w-2 h-2 rounded-full bg-gold" />
                 {b}
@@ -180,7 +180,7 @@ function Index() {
         {[
           { stars: true, label: "5.0 Google Rating" },
           { label: "Trusted by 50+ Houston Homeowners" },
-          { label: "Licensed & Insured in Texas" },
+          { label: "Serving Greater Houston" },
           { label: "100% Free Estimates" },
         ].map((p, i) => (
           <div key={i} className="condensed text-base font-bold tracking-wider uppercase text-green-dk flex items-center gap-2.5">
@@ -423,7 +423,7 @@ function Index() {
         <div className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between gap-4 pt-6">
           <p className="text-xs text-white/30">© {new Date().getFullYear()} PaintLux. All rights reserved.</p>
           <div className="flex flex-wrap gap-2">
-            {["Licensed", "Insured", "BBB A+", "Google 5★"].map((b) => (
+            {["BBB A+", "Google 5★", "Top Rated", "Premium Materials"].map((b) => (
               <span key={b} className="text-[0.72rem] font-bold tracking-widest uppercase text-white/30 border border-white/10 px-2.5 py-1">{b}</span>
             ))}
           </div>
