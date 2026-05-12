@@ -66,7 +66,7 @@ const AREAS = ["Houston", "Katy", "The Woodlands", "Sugar Land", "Pearland", "Cy
 function Logo() {
   return (
     <a href="#hero" className="flex items-center no-underline">
-      <img src={logoImg} alt="PaintLux – Your Home Deserves Luxury" className="h-28 w-auto object-contain" />
+      <img src={logoImg} alt="PaintLux – Your Home Deserves Luxury" className="h-32 w-auto object-contain" />
     </a>
   );
 }
